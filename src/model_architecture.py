@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.python.keras import layers, models
+from tensorflow.keras import layers, models
 
 class GoodNoGoodClassifier:
     def __init__(self, input_shape=(150, 150, 3), num_classes=1):
@@ -44,11 +44,11 @@ class GoodNoGoodClassifier:
         
         # Compile the model
         model.compile(
-            optimizer=tf.python.keras.optimizers.Adam(learning_rate=0.0001),
+            optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
             loss='binary_crossentropy',
             metrics=['accuracy', 
-                     tf.python.keras.metrics.Precision(), 
-                     tf.python.keras.metrics.Recall()]
+                     tf.keras.metrics.Precision(), 
+                     tf.keras.metrics.Recall()]
         )
         
         return model

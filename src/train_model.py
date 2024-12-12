@@ -31,7 +31,7 @@ class ModelTrainer:
         callbacks = []
         
         if early_stopping:
-            early_stop = tf.python.keras.callbacks.EarlyStopping(
+            early_stop = tf.keras.callbacks.EarlyStopping(
                 monitor='val_loss', 
                 patience=5, 
                 restore_best_weights=True
@@ -92,4 +92,5 @@ class ModelTrainer:
         """
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         self.model.save(save_path)
+
         print(f"Model saved to {save_path}")
