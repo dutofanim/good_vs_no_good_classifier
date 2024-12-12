@@ -1,0 +1,17 @@
+Classification Report for Good vs No Good Classification
+==================================================
+
+              precision    recall  f1-score   support
+
+        good       0.50      0.54      0.52       400
+     no_good       0.50      0.46      0.48       400
+
+    accuracy                           0.50       800
+   macro avg       0.50      0.50      0.50       800
+weighted avg       0.50      0.50      0.50       800
+
+
+Note: 
+- Precision: Accuracy of positive predictions
+- Recall: Fraction of positives correctly identified
+- F1-score: Harmonic mean of precision and recall
