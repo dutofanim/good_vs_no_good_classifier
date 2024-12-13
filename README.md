@@ -27,7 +27,7 @@ Follow these steps to set up the project on your machine:
 
 1. First, clone the repository:
 ```bash
-git clone https://github.com/yourusername/good-no-good-classifier.git
+git clone https://github.com/dutofanim/good-no-good-classifier.git
 cd good-no-good-classifier
 ```
 
