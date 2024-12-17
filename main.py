@@ -203,7 +203,7 @@ def train_model(TRAIN_DIR, VALIDATION_DIR, RESULTS_DIR):
     )
 
     # Save the model
-    model_save_path = os.path.join(RESULTS_DIR, 'good_no_good_classifier.h5')
+    model_save_path = os.path.join(RESULTS_DIR, 'good_no_good_classifier.keras')
     trainer.save_model(model_save_path)
     logging.info(f"Model saved to {model_save_path}")
 
@@ -227,7 +227,7 @@ def main():
         TRAIN_DIR = os.path.join(PROJECT_ROOT, 'data', 'train')
         VALIDATION_DIR = os.path.join(PROJECT_ROOT, 'data', 'validation')
         RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results')
-        MODEL_PATH = os.path.join(RESULTS_DIR, 'good_no_good_classifier.h5')
+        MODEL_PATH = os.path.join(RESULTS_DIR, 'good_no_good_classifier.keras')
 
         # Create results directory
         os.makedirs(RESULTS_DIR, exist_ok=True)

@@ -3,8 +3,8 @@ Classification Report for Good vs No Good Classification
 
               precision    recall  f1-score   support
 
-        good       0.48      0.54      0.51       400
-     no_good       0.47      0.42      0.44       400
+        good       0.49      0.55      0.52       400
+     no_good       0.48      0.42      0.45       400
 
     accuracy                           0.48       800
    macro avg       0.48      0.48      0.48       800
